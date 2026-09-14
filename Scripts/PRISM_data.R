@@ -194,7 +194,10 @@ temp_distribution_garden <- prism_temp %>%
 
 temp_distribution_garden
 
-# Plot the number of days at different daily mean temperatures
+# Proposed temperatures for fungal thermal tolerance exp
+treatments <- c(5, 10, 15, 20, 25, 30)
+
+# Plot the number of days at different daily mean temp
 ggplot(prism_temp, aes(x = tmean)) +
   geom_histogram(
     binwidth = 2,
@@ -217,5 +220,4 @@ ggplot(prism_temp, aes(x = tmean)) +
   ) +
   theme_classic()
 
-# Proposed temperatures for fungal thermal tolerance exp
-treatments <- c(5, 10, 15, 20, 25, 30)
+
